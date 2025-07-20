@@ -20,42 +20,6 @@ engine.setProperty('voice', voices[0].id)
 genai.configure(api_key="AIzaSyDnqnKxDyiyDuZeueyGOspT-vwQ9VzadUQ")
 model = genai.GenerativeModel("gemini-2.0-flash")
 
-# config = {
-#     "name": ["кеша"],
-#     "tbr": ["подскажи", "скажи","расскажи", "покажи", "сколько", "произнеси","открой",
-#             "запусти","запускай","сделай","делай","добавь","добавить"],
-#     "cmds": {
-#         "time": ["текущее время", "который час", "сейчас времени",
-#                     "сколько время", "какое сейчас время", "время"],
-#         "day": ["какой день", "день недели", "какой сегодня день"],
-#         "date": ["какое сегодня число","какая сегодня дата", " сегодняшнее число", "число", "дата"],
-#         "weather": ["погода", "погода на сегодня", "сегодняшнюю погоду",
-#                     "какое погода", "какое сегодня погода"],
-#         "todo": ["заметку", "заметка", "список", "дело", "список дел"],
-#         "reminder": ["напоминание в", "напомни", "уведомление в"],
-#         "youtube": ["youtube"],
-#         "github": ["github"],
-#         "screenshot": ["screenshot", "скриншот", ""],
-#         "exit": ["выход", "отключись", "завершить работу", "завершение работы", "заткнись", 
-#                  "выйти", "пока", "до свидания", "отключайся"],
-#         "thanks": ["спасибо","благодарю","спасибо за помощь","лучший"]
-#     }
-# }
-
-# sounds = {
-#     "start": "voices_rus/run.wav",
-#     "greet": [
-#         "voices_rus/greet1.wav",
-#         "voices_rus/greet2.wav",
-#         "voices_rus/greet3.wav"
-#     ],
-#     "ok1": "voices_rus/ok1.wav",
-#     "ok2": "voices_rus/ok2.wav",
-#     "ok3": "voices_rus/ok3.wav",
-#     "exit": "voices_rus/off.wav",
-#     "thanks": "voices_rus/thanks.wav"
-# }
-
 def say(Text):
     try:
         print("[log] Ответ: " + Text)
